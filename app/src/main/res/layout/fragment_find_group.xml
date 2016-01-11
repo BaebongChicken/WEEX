@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDD"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFF">
+
+        <FrameLayout
+            android:id="@+id/lightningLayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lightning" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="10dp"
+                    android:src="@drawable/check3" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/lightningIndicator"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_gravity="bottom"
+                android:background="#B95F5C" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/clubLayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/club" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="10dp"
+                    android:src="@drawable/check3" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/clubIndicator"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_gravity="bottom"
+                android:background="#B95F5C" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/placeLayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/place" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="10dp"
+                    android:src="@drawable/check3" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/placeIndicator"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_gravity="bottom"
+                android:background="#B95F5C" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/groupListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

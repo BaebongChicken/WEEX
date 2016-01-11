@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:orientation="vertical"
+    tools:context="com.kjstudio.weex.activities.EditGroupActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/largeCategoryTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/club" />
+
+                <ImageView
+                    android:id="@+id/largeCategoryImg"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="5dp"
+                    android:padding="3dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/check3" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+
+                <TextView
+                    android:id="@+id/categoryTxt"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/red_circle"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:scaleType="fitCenter"
+                    android:text="@string/school"
+                    android:textColor="#FFF" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#EAEAEA"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/제목"
+                    android:textColor="#000" />
+
+                <EditText
+                    android:id="@+id/titleEdt"
+                    android:singleLine="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/운동_종목"
+                    android:textColor="#000" />
+
+                <LinearLayout
+                    android:id="@+id/subjectLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/actNameTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:id="@+id/actLevelTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/addSubjectBtn"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/check3" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#EAEAEA"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/place"
+                    android:textColor="#000" />
+
+                <EditText
+                    android:id="@+id/locationEdt"
+                    android:layout_width="match_parent"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/locationTxt"
+                    android:padding="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/터치해서_장소검색"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:background="#FFF"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/시간"
+                    android:textColor="#000" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ToggleButton
+                        android:id="@+id/notConfirmedBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/정기모임_정해지지않음" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/dateLayout"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/startDateTxt"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:text="2016-01-07"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:padding="10dp"
+                        android:id="@+id/startTimeTxt"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="오후 6시 30분"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#EAEAEA"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/모집인원"
+                    android:textColor="#000" />
+
+                <EditText
+                    android:id="@+id/countEdt"
+                    android:inputType="numberDecimal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/상세설명"
+                    android:textColor="#000" />
+
+                <EditText
+                    android:id="@+id/descriptionEdt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/nextBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/color_primary"
+                    android:gravity="center_vertical|right"
+                    android:padding="10dp"
+                    android:text="@string/next"
+                    android:textColor="@color/color_text_primary_inverse" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

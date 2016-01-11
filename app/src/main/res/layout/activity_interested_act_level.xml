@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context="com.kjstudio.weex.activities.InterestedActsLevelActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin_top_2">
+
+        <TextView
+            android:layout_width="@dimen/menu_width_extend"
+            android:layout_height="wrap_content"
+            android:text="@string/interestedactslevel_subtitle_1"
+            android:layout_marginTop="@dimen/margin_top"
+            android:gravity="center" />
+
+        <Button
+            android:layout_width="@dimen/menu_width_extend"
+            android:layout_height="wrap_content"
+            android:text="@string/interestedactslevel_caption_1"
+            android:id="@+id/levelProBtn"
+            android:layout_marginTop="@dimen/margin_top"
+            android:textAllCaps="false"
+            android:layout_marginBottom="@dimen/margin_bottom" />
+
+        <Button
+            android:layout_width="@dimen/menu_width_extend"
+            android:layout_height="wrap_content"
+            android:text="@string/interestedactslevel_caption_2"
+            android:id="@+id/levelAmateurBtn"
+            android:layout_marginTop="@dimen/margin_top"
+            android:textAllCaps="false"
+            android:layout_marginBottom="@dimen/margin_bottom" />
+
+        <Button
+            android:layout_width="@dimen/menu_width_extend"
+            android:layout_height="wrap_content"
+            android:text="@string/interestedactslevel_caption_3"
+            android:id="@+id/levelOkayBtn"
+            android:layout_marginTop="@dimen/margin_top"
+            android:textAllCaps="false"
+            android:layout_marginBottom="@dimen/margin_bottom" />
+
+        <Button
+            android:layout_width="@dimen/menu_width_extend"
+            android:layout_height="wrap_content"
+            android:text="@string/interestedactslevel_caption_4"
+            android:id="@+id/levelBeginnerBtn"
+            android:layout_marginTop="@dimen/margin_top"
+            android:textAllCaps="false"
+            android:layout_marginBottom="@dimen/margin_bottom" />
+
+        <Button
+            android:layout_width="@dimen/menu_width_extend"
+            android:layout_height="wrap_content"
+            android:text="@string/interestedactslevel_caption_5"
+            android:id="@+id/levelNoneBtn"
+            android:layout_marginTop="@dimen/margin_top"
+            android:textAllCaps="false"
+            android:layout_marginBottom="@dimen/margin_bottom" />
+    </LinearLayout>
+</LinearLayout>

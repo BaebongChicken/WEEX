@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:padding="5dp"
+            android:src="@drawable/check3"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/contentTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="같이 한강 주변에서 뛰었는데, 덕분에 정말 즐겁게 조깅한거 같아요! 추천합니다!"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/dateTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2015. 12. 03"
+                    />
+
+                <ImageButton
+                    android:layout_marginLeft="5dp"
+                    android:background="#0000"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/check3"
+                    android:scaleType="fitXY"
+                    android:padding="5dp"/>
+                <ImageButton
+                    android:layout_marginLeft="5dp"
+                    android:background="#0000"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/check3"
+                    android:scaleType="fitXY"
+                    android:padding="5dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

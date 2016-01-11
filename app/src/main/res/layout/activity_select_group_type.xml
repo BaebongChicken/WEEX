@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:orientation="vertical"
+    tools:context="com.kjstudio.weex.activities.SelectGroupTypeActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/페이지를_선택해주세요"
+        android:textColor="#000"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/comehere" />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="5dp"
+                    android:padding="3dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/check3" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/club" />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="5dp"
+                    android:padding="3dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/check3" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/place" />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="5dp"
+                    android:padding="3dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/check3" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+
+                <TextView
+                    android:id="@+id/vsModeTxt"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/red_circle"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:tag="0"
+                    android:scaleType="fitCenter"
+                    android:text="@string/vs_mode"
+                    android:textColor="#FFF" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+
+                <TextView
+                    android:id="@+id/schoolTxt"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/red_circle"
+                    android:gravity="center"
+                    android:tag="3"
+                    android:padding="3dp"
+                    android:scaleType="fitCenter"
+                    android:text="@string/school"
+                    android:textColor="#FFF" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+
+                <TextView
+                    android:id="@+id/publicPlaceTxt"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/red_circle"
+                    android:gravity="center"
+                    android:tag="6"
+                    android:padding="3dp"
+                    android:scaleType="fitCenter"
+                    android:text="@string/공공장소"
+                    android:textColor="#FFF" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+
+                <TextView
+                    android:id="@+id/lightningTxt"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/red_circle"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:tag="1"
+                    android:scaleType="fitCenter"
+                    android:text="@string/lightning"
+                    android:textColor="#FFF" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+
+                <TextView
+                    android:id="@+id/companyTxt"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/red_circle"
+                    android:gravity="center"
+                    android:tag="4"
+                    android:padding="3dp"
+                    android:scaleType="fitCenter"
+                    android:text="@string/company"
+                    android:textColor="#FFF" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+
+                <TextView
+                    android:id="@+id/privatePlaceTxt"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/red_circle"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:scaleType="fitCenter"
+                    android:tag="7"
+                    android:text="@string/개인장소"
+                    android:textColor="#FFF" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+
+                <TextView
+                    android:id="@+id/lessonOrEventTxt"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/red_circle"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:tag="2"
+                    android:scaleType="fitCenter"
+                    android:text="@string/lessonOrEvent"
+                    android:textColor="#FFF" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+
+                <TextView
+                    android:id="@+id/normalClubTxt"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/red_circle"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:scaleType="fitCenter"
+                    android:tag="5"
+                    android:text="@string/normal_club"
+                    android:textColor="#FFF" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+
+                <TextView
+                    android:id="@+id/excersiseToolTxt"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/red_circle"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:scaleType="fitCenter"
+                    android:tag="8"
+                    android:text="@string/운동용품"
+                    android:textColor="#FFF" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

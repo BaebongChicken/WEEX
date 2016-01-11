@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/missionLayoutLeft"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/missionBackgroundImgViewLeft"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#F55"/>
+
+            <TextView
+                android:id="@+id/missionTitleTxtLeft"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="How to use #WEEX"
+                android:textColor="#FFF"/>
+
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:id="@+id/missionLayoutRight"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/missionBackgroundImgViewRight"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#55F"/>
+
+            <TextView
+                android:id="@+id/missionTitleTxtRight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Weekly Mission #1"
+                android:textColor="#FFF"/>
+
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.kjstudio.weex.activities.SignUp3Activity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_background_gray"
+                android:minHeight="@dimen/signup3_item_height"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/textview_padding_all"
+                    android:text="@string/signup3_subtitle_1" />
+
+                <EditText
+                    android:layout_width="@dimen/menu_width"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:padding="@dimen/textview_padding_all"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/manBtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:text="@string/남자" />
+
+                        <RadioButton
+                            android:id="@+id/womanBtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_margin="10dp"
+                            android:text="@string/여자" />
+
+                        <RadioButton
+                            android:id="@+id/otherBtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:checked="true"
+                            android:text="@string/기타" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_background_white"
+                android:minHeight="@dimen/signup3_item_height"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/textview_padding_all"
+                    android:text="@string/signup3_subtitle_2" />
+
+                <Spinner
+                    android:id="@+id/ageSpinner"
+                    android:layout_width="match_parent"
+                    android:entries="@array/ages_spinner_item"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/color_background_gray"
+                android:minHeight="@dimen/signup3_item_height"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="@dimen/textview_padding_all"
+                    android:text="@string/signup3_subtitle_3" />
+
+                <EditText
+                    android:id="@+id/specialityEdt"
+                    android:layout_width="@dimen/menu_width"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:padding="@dimen/textview_padding_all" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:background="@color/color_background_white"
+                android:minHeight="@dimen/signup3_item_height"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="@dimen/textview_padding_all"
+                    android:text="@string/signup3_subtitle_4" />
+
+                <EditText
+                    android:id="@+id/concernEdt"
+                    android:layout_width="@dimen/menu_width"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:padding="@dimen/textview_padding_all" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/color_background_white"
+                android:minHeight="@dimen/signup3_item_height"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="@dimen/textview_padding_all"
+                    android:text="@string/signup3_subtitle_5" />
+
+                <EditText
+                    android:id="@+id/spokenLanguageEdt"
+                    android:layout_width="@dimen/menu_width"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:padding="@dimen/textview_padding_all" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/color_background_gray"
+                android:minHeight="@dimen/signup3_item_height"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="@dimen/textview_padding_all"
+                    android:text="@string/signup3_subtitle_6" />
+
+                <EditText
+                    android:id="@+id/belongEdt"
+                    android:layout_width="@dimen/menu_width"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:padding="@dimen/textview_padding_all" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/color_background_white"
+                android:minHeight="@dimen/signup3_item_height"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="@dimen/textview_padding_all"
+                    android:text="@string/signup3_subtitle_7" />
+
+                <EditText
+                    android:id="@+id/profileLineEdt"
+                    android:layout_width="@dimen/menu_width"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:maxLength="15"
+                    android:padding="@dimen/textview_padding_all" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_background_gray"
+                android:minHeight="@dimen/signup3_item_height"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="@dimen/textview_padding_all"
+                    android:text="@string/signup3_subtitle_8" />
+
+                <EditText
+                    android:id="@+id/aboutMeEdt"
+                    android:layout_width="@dimen/menu_width"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/textview_padding_all" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:minHeight="300dp">
+
+                <Button
+                    android:id="@+id/nextBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/color_primary"
+                    android:gravity="center_vertical|right"
+                    android:text="@string/next"
+                    android:textColor="@color/color_text_primary_inverse" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,144 @@
+<resources>
+
+    <string name="app_name">WEEX</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_sign_up">SignUpActivity</string>
+
+    <string name="facebook_app_id">901594853295032</string>
+
+    <!--share-->
+    <string name="yes">예</string>
+    <string name="no">아니오</string>
+    <string name="next">다음으로</string>
+    <string name="complete">완료</string>
+    <string name="start">시작하기</string>
+    <string name="remove"><u>삭제</u></string>
+    <string name="modify"><u>수정</u></string>
+    <string name="lightning">번개</string>
+    <string name="club">클럽</string>
+    <string name="place">장소</string>
+    <string name="apply"><u>적용기</u></string>
+
+    <!--SignUpActivity-->
+    <string name="signup_title">기본정보입력</string>
+    <string name="signup_subtitle_1">이름을 입력 해 주세요</string>
+    <string name="signup_subtitle_2">자신의 위치를 입력 해 주세요</string>
+    <string name="signup_subtitle_3">운동 관련 코치나 트레이너 이신가요?</string>
+    <string name="signup_caption_1">더 나은 결과를 위해 동까지 입력해주세요</string>
+
+    <!--SignUp2Activity-->
+    <string name="signup2_title">운동종목선택</string>
+    <string name="signup2_subtitle_1">좋아하는 운동을 선택 해 주세요</string>
+    <string name="signup2_caption_1">최대 4개의 종목까지 선택 가능합니다</string>
+    <!--SignUp3Activity-->
+    <string name="signup3_title">추가정보입력</string>
+    <string name="signup3_subtitle_1">성별</string>
+    <string name="signup3_subtitle_2">나이</string>
+    <string name="signup3_subtitle_3">특기 및 직업</string>
+    <string name="signup3_subtitle_4">다른 관심사</string>
+    <string name="signup3_subtitle_5">언어/Spoken Languages</string>
+    <string name="signup3_subtitle_6">학교 및 직장</string>
+    <string name="signup3_subtitle_7">한줄소개/Profile Line</string>
+    <string name="signup3_subtitle_8">자기소개/About me</string>
+
+    <!--SignUp4Activity-->
+    <string name="signup4_title">사진추가</string>
+    <string name="signup4_subtitle_1">사진을 추가해주세요\nAdd Your Pictures</string>
+
+    <!--InterestedActsActivity-->
+    <string name="interestedacts_title">운동종목선택</string>
+
+    <!--InterestedActsLevelActivity-->
+    <string name="interestedactslevel_title">수준선택/Level</string>
+    <string name="interestedactslevel_subtitle_1">운동 수준을 선택해 주세요\nChoose Your Level</string>
+    <string name="interestedactslevel_caption_1">Pro</string>
+    <string name="interestedactslevel_caption_2">Amateur</string>
+    <string name="interestedactslevel_caption_3">Okay</string>
+    <string name="interestedactslevel_caption_4">Beginner</string>
+    <string name="interestedactslevel_caption_5">None</string>
+
+    <!--SelectModeActivity-->
+    <string name="selectmode_item0">Comlete Missions</string>
+    <string name="selectmode_item1">Find Groups to</string>
+    <string name="selectmode_item1_execercisewith">Excercise With</string>
+    <string name="selectmode_item2">Find Members to</string>
+
+    <!--MissionDetailActivity-->
+    <string name="missiondetail_comments">Comments</string>
+    <string name="missiondetail_title">Weekly Mission #1</string>
+
+    <!--UserProfileActivity-->
+    <!--Group_detailAcitivity-->
+    <string name="group_participate">참가하기</string>
+    <string name="host">호스트</string>
+    <string name="group_qna">Comments and Q&amp;A</string>
+    <string name="report">신고</string>
+
+    <!--pageFilteringActivity-->
+    <string name="pagefiltering_title">페이지 필터</string>
+    <string name="pagefiltering_subtitle_1">종목</string>
+    <string name="pagefiltering_subtitle_2">페이지</string>
+    <string name="pagefiltering_subtitle_3">시간</string>
+    <string name="pagefiltering_subtitle_4">키워드</string>
+    <string name="pagefiltering_caption_1">정기모임/정해지지 않음</string>
+    <!--FindGroupFragment-->
+    <!--<string name="lightning">번개</string>-->
+    <!--<string name="club">클럽</string>-->
+    <!--<string name="place">장소</string>-->
+    <!--위의 3가지는 쓰이는 곳이 많아 share로 뺌-->
+
+    <!--MyFriends-->
+    <string name="myfriend">내친구</string>
+    <string name="friend_request">친구요청</string>
+    <!--MyWeex-->
+    <string name="myweex">내가 만든 Weex</string>
+    <string name="myjoinweex">내가 참가하는 Weex</string>
+
+
+    <!--FindLocationActivity-->
+    <string name="type_location_plz">검색할 장소를 입력하세요.</string>
+    <string name="FindLocationActivity_title">장소 찾기</string>
+
+
+    <!--SelectGroupTypeActivity-->
+    <string name="페이지_만들기">페이지 만들기</string>
+    <string name="페이지를_선택해주세요">페이지를 선택해주세요</string>
+    <string name="comehere">모여봐</string>
+    <string name="vs_mode">VS. Mode</string>
+    <string name="lessonOrEvent">레슨/이벤트</string>
+    <string name="school">학교</string>
+    <string name="company">회사</string>
+    <string name="normal_club">일반 동호회</string>
+    <string name="공공장소">공공장소</string>
+    <string name="개인장소">개인장소</string>
+    <string name="운동용품">운동용품</string>
+
+
+    <string-array name="ages_spinner_item">
+        <item>10대</item>
+        <item>20대</item>
+        <item>30대</item>
+    </string-array>
+
+    <string name="제목">제목</string>
+    <string name="운동_종목">운동 종목</string>
+    <string name="시간">시간</string>
+    <string name="정기모임_정해지지않음">정기모임/정해지지않음</string>
+    <string name="인원">인원</string>
+    <string name="모집인원">모집인원</string>
+    <string name="상세설명">상세설명</string>
+    <string name="모임명을_입력해주세요">모임명을 입력해주세요.</string>
+    <string name="운동종목을_입력해주세요">운동종목을 입력해주세요.</string>
+    <string name="장소를_입력해주세요">장소를 입력해주세요.</string>
+    <string name="터치해서_장소검색">터치해서 장소검색</string>
+    <string name="이름을_입력해_주세요">이름을 입력해 주세요.</string>
+    <string name="잠시만_기다려주세요">잠시만 기다려주세요..</string>
+    <string name="남자">남자</string>
+    <string name="여자">여자</string>
+    <string name="기타">기타</string>
+    <!--<string name="잠시만_기다려주세요">하나 .</string>-->
+
+</resources>

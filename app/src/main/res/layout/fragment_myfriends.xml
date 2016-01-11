@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFF">
+
+        <FrameLayout
+            android:id="@+id/myFriendLayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/myfriend" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="10dp"
+                    android:src="@drawable/check3" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/myFriendIndicator"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_gravity="bottom"
+                android:background="#B95F5C" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/friendRequestLayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/friend_request" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="10dp"
+                    android:src="@drawable/check3" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/friendRequestIndicator"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_gravity="bottom"
+                android:background="#B95F5C" />
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/myFriendListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+        <ListView
+            android:id="@+id/friendRequestListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+
+    </android.support.v4.view.ViewPager>
+
+
+</LinearLayout>

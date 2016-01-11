@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:gravity="center_horizontal"
+    tools:context="com.kjstudio.weex.activities.SignUp4Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="@dimen/menu_width_extend"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/textview_padding_all"
+            android:text="@string/signup4_subtitle_1" />
+
+        <LinearLayout
+            android:layout_width="@dimen/menu_width_extend"
+            android:layout_height="300dp"
+            android:layout_marginTop="@dimen/margin_top"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="300dp"
+                android:layout_height="150dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/signupPhotoBtn1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/margin_all_1"
+                        android:layout_weight="1"
+                        android:textColor="@color/color_text_primary_inverse"
+                        android:visibility="visible"
+                        android:src="@drawable/check3"
+                        android:scaleType="centerCrop" />
+
+                    <ImageView
+                        android:id="@+id/signupPhotoBtn2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/margin_all_1"
+                        android:layout_weight="1"
+                        android:textColor="@color/color_text_primary_inverse"
+                        android:visibility="visible"
+                        android:src="@drawable/check3"
+                        android:scaleType="centerCrop" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_margin="@dimen/margin_all_1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:id="@+id/modifyPhotoBtn1"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/modify"
+                            android:background="@color/color_background_translucent"
+                            android:visibility="gone"
+                            android:textColor="@color/color_text_primary_inverse" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:text="@string/remove"
+                            android:id="@+id/removePhotoBtn1"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:background="@color/color_background_translucent"
+                            android:visibility="gone"
+                            android:textColor="@color/color_text_primary_inverse" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_margin="@dimen/margin_all_1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:text="@string/modify"
+                            android:id="@+id/modifyPhotoBtn2"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:background="@color/color_background_translucent"
+                            android:visibility="gone"
+                            android:textColor="@color/color_text_primary_inverse" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:text="@string/remove"
+                            android:id="@+id/removePhotoBtn2"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:background="@color/color_background_translucent"
+                            android:visibility="gone"
+                            android:textColor="@color/color_text_primary_inverse" />
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:layout_margin="@dimen/margin_all_1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/signupPhotoBtn3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/margin_all_1"
+                        android:layout_weight="1"
+                        android:textColor="@color/color_text_primary_inverse"
+                        android:visibility="visible"
+                        android:src="@drawable/check3"
+                        android:scaleType="centerCrop" />
+
+                    <ImageView
+                        android:id="@+id/signupPhotoBtn4"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/margin_all_1"
+                        android:layout_weight="1"
+                        android:textColor="@color/color_text_primary_inverse"
+                        android:visibility="visible"
+                        android:src="@drawable/check3"
+                        android:scaleType="centerCrop" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_margin="@dimen/margin_all_1" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:text="@string/modify"
+                            android:id="@+id/modifyPhotoBtn3"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:background="@color/color_background_translucent"
+                            android:visibility="gone"
+                            android:textColor="@color/color_text_primary_inverse" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:text="@string/remove"
+                            android:id="@+id/removePhotoBtn3"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:background="@color/color_background_translucent"
+                            android:visibility="gone"
+                            android:textColor="@color/color_text_primary_inverse" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_margin="@dimen/margin_all_1" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:text="@string/modify"
+                            android:id="@+id/modifyPhotoBtn4"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:background="@color/color_background_translucent"
+                            android:visibility="gone"
+                            android:textColor="@color/color_text_primary_inverse" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:text="@string/remove"
+                            android:id="@+id/removePhotoBtn4"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:background="@color/color_background_translucent"
+                            android:visibility="gone"
+                            android:textColor="@color/color_text_primary_inverse" />
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/startBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/color_primary"
+            android:gravity="center_vertical|right"
+            android:text="@string/start"
+            android:textColor="@color/color_text_primary_inverse" />
+    </RelativeLayout>
+</RelativeLayout>

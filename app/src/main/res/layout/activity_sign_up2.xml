@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    tools:context="com.kjstudio.weex.activities.SignUp2Activity"
+    android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:gravity="center"
+        android:layout_marginBottom="50dp">
+
+        <TextView
+            android:layout_width="@dimen/menu_width_extend"
+            android:layout_height="wrap_content"
+            android:text="@string/signup2_subtitle_1"
+            android:padding="@dimen/textview_padding_all"
+            android:gravity="center" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="@dimen/menu_width_extend"
+            android:layout_height="300dp"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/margin_top" >
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="+"
+                    android:id="@+id/interestAct1Btn"
+                    android:visibility="visible"
+                    android:background="@color/color_primary_Soft"
+                    android:layout_margin="@dimen/margin_all_1"
+                    android:textColor="@color/color_text_primary_inverse"
+                    android:textSize="18dp" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="+"
+                    android:id="@+id/interestAct2Btn"
+                    android:visibility="invisible"
+                    android:background="@color/color_primary"
+                    android:layout_margin="@dimen/margin_all_1"
+                    android:textColor="@color/color_text_primary_inverse"
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="+"
+                    android:id="@+id/interestAct3Btn"
+                    android:visibility="invisible"
+                    android:background="@color/color_primary_Dark"
+                    android:layout_margin="@dimen/margin_all_1"
+                    android:textColor="@color/color_text_primary_inverse"
+                    android:textSize="18dp" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="+"
+                    android:id="@+id/interestAct4Btn"
+                    android:visibility="invisible"
+                    android:background="@color/color_Accent"
+                    android:layout_margin="@dimen/margin_all_1"
+                    android:textColor="@color/color_text_primary_inverse"
+                    android:textSize="18dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="@dimen/menu_width_extend"
+            android:layout_height="wrap_content"
+            android:text="@string/signup2_caption_1"
+            android:gravity="center"
+            android:padding="@dimen/textview_padding_all"
+            android:layout_marginTop="@dimen/margin_top" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/next"
+            android:id="@+id/nextBtn"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_vertical|right"
+            android:background="@color/color_primary"
+            android:textColor="@color/color_text_primary_inverse" />
+    </RelativeLayout>
+</RelativeLayout>
